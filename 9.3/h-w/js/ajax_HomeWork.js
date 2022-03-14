@@ -5,6 +5,7 @@ window.addEventListener("load", () => {
   //wait for the response
   xhr.onreadystatechange = () => {
     //check if the request and response is successful
+    console.log(xhr.readyState);
     if (xhr.readyState == XMLHttpRequest.DONE) {
       if (xhr.status == 200 || xhr.status == 201) {
         console.log("xhr.responseText", xhr.responseText);
